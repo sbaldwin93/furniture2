@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<div class="theItems" ng-repeat="item in itemsArray">
+		<div class="col-xs-12 col-md-3" id="photo1">
+			<h4 class="item-cont">{{item.name}}</h4>
+			<h4 class="item-cont">L {{item.length}}</h4>
+			<h4 class="item-cont">W {{item.width}}</h4>
+			<h4 class="item-cont">H {{item.height}}</h4>
+			<h4 class="item-cont">${{item.price}}</h4>
+		</div>
+		<div class="photos-cont">
+			<img class="col-xs-3 col-md-3" id="photo2" ng-src="{{item.image}}" ng-click="getId(item)">
+			<div class="col-xs-3 col-md-3" id="photo3"></div>
+			<div class="col-xs-3 col-md-3" id="photo4"></div>
+			<div class="col-xs-3 col-md-3" id="photo5"></div>
+		</div>
+	</div>
+</div>

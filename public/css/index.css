@@ -1,0 +1,193 @@
+#title {
+	text-decoration: none;
+	color: black;
+}
+#brand {
+	width: 100%;
+	text-align: center;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+#logo {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.strike {
+	width: 100%;
+	height: 1px;
+	margin: auto;
+	background-color: black;
+}
+.navbar {
+	background-color: white;
+	border: none;
+	margin-bottom: 0px;
+}
+.navabar-toggle {
+	background-color: white;
+}
+#pics {
+	border: 1px solid white;
+	margin: 0px;
+	padding: 0px;
+	height: 270px;
+	position: relative;
+}
+#pics:hover {
+	cursor: pointer;
+}
+.pic1 {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background:
+	linear-gradient(
+		rgba(38, 38, 38, 0.60),
+		rgba(38, 38, 38, 0.60)
+		),
+	url(/images/pic1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.pic2 {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background:
+	linear-gradient(
+		rgba(38, 38, 38, 0.60),
+		rgba(38, 38, 38, 0.60)
+		),
+	url(/images/pic2.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.pic3 {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background:
+	linear-gradient(
+		rgba(38, 38, 38, 0.60),
+		rgba(38, 38, 38, 0.60)
+		),
+	url(/images/pic3.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.pic4 {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background:
+	linear-gradient(
+		rgba(38, 38, 38, 0.75),
+		rgba(38, 38, 38, 0.75)
+		),
+	url(/images/pic4.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.img-txt {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	padding-top: 100px;
+	color: white;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.type {
+	width: 100%;
+	text-align: center;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+#add-btn {
+	width: 50%;
+	background-color: white;
+	color: green;
+	border: 1px solid green;
+	margin-bottom: 10px;
+}
+#add-item {
+	width: 100%;
+	background-color: white;
+	color: green;
+	border: 1px solid green;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#move-btn {
+	width: 100%;
+	text-align: center;
+}
+.theItems {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+.hide {
+	color: white;
+}
+
+
+
+.item-con {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+.item-cont {
+	font-family: "Times New Roman", Georgia, Serif;
+}
+#photo1 {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid black;
+	height: 270px;
+}
+.photos-cont {
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+}
+#photo2, #photo3, #photo4, #photo5 {
+	display: inline-block;
+	height: 100px;
+	border: 1px solid black;
+}
+.main-photo {
+	margin: 0px;
+	padding: 0px;
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+}
+
+/* temp upload css*/
+.thumb {
+    width: 24px;
+    height: 24px;
+    float: none;
+    position: relative;
+    top: 7px;
+}
+
+form .progress {
+    line-height: 15px;
+}
+}
+
+.progress {
+    display: inline-block;
+    width: 100px;
+    border: 3px groove #CCC;
+}
+
+.progress div {
+    font-size: smaller;
+    background: orange;
+    width: 0;
+}

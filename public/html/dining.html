@@ -1,0 +1,60 @@
+<div class="container-fluid">
+	<h3 class="type">D I N I N G</h3>
+		<div class="days-con">
+		<div class="container-fluid" id="move-btn">
+		<div class="container-fluid" id="move-btn" ng-if="loggedIn"><!--ngif goes here-->
+			<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample" id="add-btn">+</button>
+		</div>
+		<div class="collapse" id="collapseExample1">
+		  	<h4 class="item-con">N a m e</h4>
+		  	<input class="form-control" ng-model="item.name">
+		  	<h4 class="item-con">l e n g t h</h4>
+		  	<input class="form-control" ng-model="item.length">
+		  	<h4 class="item-con">W i d t h</h4>
+		  	<input class="form-control" ng-model="item.width">
+		  	<h4 class="item-con">H e i g h t</h4>
+		  	<input class="form-control" ng-model="item.height">
+		  	<h4 class="item-con">P r i c e</h4>
+		  	<input class="form-control" ng-model="item.price">
+		  	<h4 class="item-con">L o c a t i o n</h4>
+		  	<input class="form-control" ng-model="item.location">
+		  	<h4 class="item-con">D e s c r i p t i o n</h4>
+		  	<textarea class="form-control" ng-model="item.description"></textarea>
+		  	<div class="select" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'" ngf-accept="'image/*'">
+				<button class="btn btn-default" id="change-pic">Change profile-pic</button>
+			</div>
+
+
+
+		  	<!--<div id="photo1"></div>
+		  	<div class="photos-cont">
+			  	<div class="col-xs-3 col-md-3" id="photo2"></div>
+				<div class="col-xs-3 col-md-3" id="photo3"></div>
+				<div class="col-xs-3 col-md-3" id="photo4"></div>
+				<div class="col-xs-3 col-md-3" id="photo5"></div>
+		  	</div>-->
+
+
+
+		  	<button class="btn btn-default" id="add-item" ng-click="addDining()">Add Item</button>
+		</div>
+	</div>
+	<div class="theItems" ng-repeat="item in itemsArray | filter : {type: 'dining'} ">
+		<div class="col-xs-12 col-md-3" id="photo1">
+			<h4 class="item-cont">{{item.name}}</h4>
+			<h4 class="item-cont" ng-if="loggedIn">{{item.location}}</h4>
+			<h4 class="item-cont">L {{item.length}}</h4>
+			<h4 class="item-cont">W {{item.width}}</h4>
+			<h4 class="item-cont">H {{item.height}}</h4>
+			<h4 class="item-cont">${{item.price}}</h4>
+			<h4 class="item-cont">{{item.description}}</h4>
+		</div>
+		<div class="photos-cont">
+			<img class="col-xs-3 col-md-3" id="photo2">
+			<div class="col-xs-3 col-md-3" id="photo3"></div>
+			<div class="col-xs-3 col-md-3" id="photo4"></div>
+			<div class="col-xs-3 col-md-3" id="photo5"></div>
+		</div>
+	</div>
+	<img ng-src="{{user.image}}">
+</div>
